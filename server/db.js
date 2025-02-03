@@ -1,12 +1,10 @@
 import dotenv from "dotenv";
+import mongoose from "mongoose";
 
 dotenv.config();
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(process.env.MONGO_URI, {});
 
 export const DataSchema = new mongoose.Schema({
   id: String,

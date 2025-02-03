@@ -1,11 +1,10 @@
 // Backend (server.js)
-const express = require("express");
-const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
-const cors = require("cors");
-const crypto = require("crypto");
+import express from "express";
+import bodyParser from "body-parser";
+import cors from "cors";
+import crypto from "crypto";
 import dotenv from "dotenv";
-import { DataModel } from "./db";
+import { DataModel } from "./db.js";
 
 const app = express();
 const port = 5000;
